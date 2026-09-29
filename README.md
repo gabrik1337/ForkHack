@@ -18,7 +18,7 @@ Made as a base for your own projects and easy to understand for beginners. Every
 
 **Release | Win32**
 
-Build the project in Release | Win32 and inject the resulting DLL into MTA:SA.
+Build the project in Release | Win32 and inject the DLL into gta_sa.exe.
 
 ## Author
 

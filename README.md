@@ -14,11 +14,16 @@ Made as a base for your own projects and easy to understand for beginners. Every
 * Binds
 * Configs
 
+## Requirements
+
+* [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_source=chatgpt.com)
+* [Plugin-SDK](https://github.com/DK22Pac/plugin-sdk?utm_source=chatgpt.com)
+
 ## Build
 
 **Release | Win32**
 
-Build the project in Release | Win32 and inject the DLL into gta_sa.exe.
+Build the project in Release | Win32 and inject the DLL into `gta_sa.exe`.
 
 ## Author
 

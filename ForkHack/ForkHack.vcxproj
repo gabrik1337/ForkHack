@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Beta|Win32">
+      <Configuration>Beta</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{50f067db-d29d-4253-972d-6b9216429909}</ProjectGuid>
+    <RootNamespace>ForkHack</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;IMGUI_DEFINE_MATH_OPERATORS;IMGUI_USE_BGRA_PACKED_COLOR;GTASA;RW;PLUGIN_SGV_10US;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)Utils;$(ProjectDir)..\thirdparty\MinHook;$(ProjectDir)..\thirdparty\imgui;C:\Users\user\Desktop\plugin-sdk-master\shared;C:\Users\user\Desktop\plugin-sdk-master\shared\game;C:\Users\user\Desktop\plugin-sdk-master\plugin_sa\game_sa\rw;C:\Users\user\Desktop\plugin-sdk-master\plugin_sa;C:\Users\user\Desktop\plugin-sdk-master\plugin_sa\game_sa;C:\Users\user\Desktop\plugin-sdk-master\plugin_sa\game_sa\enums;C:\Users\user\Desktop\plugin-sdk-master\shared\extensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp23</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\user\Desktop\plugin-sdk-master\output\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>plugin.lib;d3d9.lib;windowscodecs.lib;psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Beta|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;BETA_BUILD;IMGUI_DEFINE_MATH_OPERATORS;IMGUI_USE_BGRA_PACKED_COLOR;GTASA;RW;PLUGIN_SGV_10US;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)Utils;$(ProjectDir)..\thirdparty\MinHook;$(ProjectDir)..\thirdparty\imgui;C:\Users\user\Desktop\plugin-sdk-master\shared;C:\Users\user\Desktop\plugin-sdk-master\shared\game;C:\Users\user\Desktop\plugin-sdk-master\plugin_sa\game_sa\rw;C:\Users\user\Desktop\plugin-sdk-master\plugin_sa;C:\Users\user\Desktop\plugin-sdk-master\plugin_sa\game_sa;C:\Users\user\Desktop\plugin-sdk-master\plugin_sa\game_sa\enums;C:\Users\user\Desktop\plugin-sdk-master\shared\extensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp23</LanguageStandard>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\user\Desktop\plugin-sdk-master\output\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>plugin.lib;d3d9.lib;windowscodecs.lib;psapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="Hooks\core\ForceCursorVisible.cpp" />
+    <ClCompile Include="Hooks\Hooks.cpp" />
+    <ClCompile Include="Hooks\Collision\Collision.cpp" />
+    <ClCompile Include="Hooks\d3d9\Present.cpp" />
+    <ClCompile Include="Hooks\d3d9\Reset.cpp" />
+    <ClCompile Include="Hooks\netc\Bypass.cpp" />
+    <ClCompile Include="Hooks\LdrDll\LdrDll.cpp" />
+    <ClCompile Include="Game\Legit\Triggerbot.cpp" />
+    <ClCompile Include="Game\Misc\AirBreak.cpp" />
+    <ClCompile Include="Game\Misc\AutoEngine.cpp" />
+    <ClCompile Include="Game\Misc\AutoUnlock.cpp" />
+    <ClCompile Include="Game\Misc\KeyBinds.cpp" />
+    <ClCompile Include="Game\Misc\NoFall.cpp" />
+    <ClCompile Include="Game\Misc\CamHack.cpp" />
+    <ClCompile Include="Game\Misc\FastRot.cpp" />
+    <ClCompile Include="Game\Misc\FastRun.cpp" />
+    <ClCompile Include="Game\Misc\Flip.cpp" />
+    <ClCompile Include="Game\Misc\GameSpeed.cpp" />
+    <ClCompile Include="Game\Misc\GodMode.cpp" />
+    <ClCompile Include="Game\Misc\NoBikeFall.cpp" />
+    <ClCompile Include="Game\Misc\Repair.cpp" />
+    <ClCompile Include="Game\Misc\Skin.cpp" />
+    <ClCompile Include="Game\Misc\VehicleFlags.cpp" />
+    <ClCompile Include="Game\Rage\FastCrosshair.cpp" />
+    <ClCompile Include="Game\Rage\InfAmmo.cpp" />
+    <ClCompile Include="Game\Rage\NoRecoil.cpp" />
+    <ClCompile Include="Game\Rage\NoSpread.cpp" />
+    <ClCompile Include="Game\Rage\RapidFire.cpp" />
+    <ClCompile Include="Game\Visuals\Aspect.cpp" />
+    <ClCompile Include="Game\Visuals\Esp.cpp" />
+    <ClCompile Include="Game\Visuals\Fov.cpp" />
+    <ClCompile Include="Game\Visuals\NoCamCol.cpp" />
+    <ClCompile Include="Game\Visuals\Timecycle.cpp" />
+    <ClCompile Include="Game\Visuals\World.cpp" />
+    <ClCompile Include="Utils\Sdk.cpp" />
+    <ClCompile Include="Menu\Menu.cpp" />
+    <ClCompile Include="Menu\Binds.cpp" />
+    <ClCompile Include="Menu\BindsWindow.cpp" />
+    <ClCompile Include="Menu\Tabs\Rage.cpp" />
+    <ClCompile Include="Menu\Tabs\Legit.cpp" />
+    <ClCompile Include="Menu\Tabs\Visuals.cpp" />
+    <ClCompile Include="Menu\Tabs\Misc.cpp" />
+    <ClCompile Include="Menu\Tabs\Profile.cpp" />
+    <ClCompile Include="Menu\Widgets\Checkbox.cpp" />
+    <ClCompile Include="Menu\Widgets\Slider.cpp" />
+    <ClCompile Include="Menu\Widgets\Combo.cpp" />
+    <ClCompile Include="Menu\Widgets\Button.cpp" />
+    <ClCompile Include="Menu\Widgets\ColorPicker.cpp" />
+    <ClCompile Include="Menu\Widgets\Keybind.cpp" />
+    <ClCompile Include="Menu\Widgets\List.cpp" />
+    <ClCompile Include="Menu\Widgets\Text.cpp" />
+    <ClCompile Include="Core\Color.cpp" />
+    <ClCompile Include="Core\Config.cpp" />
+    <ClCompile Include="Gfx\Blur.cpp" />
+    <ClCompile Include="Gfx\Fonts.cpp" />
+    <ClCompile Include="Gfx\Texture.cpp" />
+    <ClCompile Include="Assets\Assets.cpp" />
+    <ClCompile Include="..\thirdparty\imgui\imgui.cpp" />
+    <ClCompile Include="..\thirdparty\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\thirdparty\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\thirdparty\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="..\thirdparty\imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="..\thirdparty\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="..\thirdparty\MinHook\buffer.cpp" />
+    <ClCompile Include="..\thirdparty\MinHook\hook.cpp" />
+    <ClCompile Include="..\thirdparty\MinHook\trampoline.cpp" />
+    <ClCompile Include="..\thirdparty\MinHook\hde\hde32.cpp" />
+    <ClCompile Include="..\thirdparty\MinHook\hde\hde64.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK.h" />
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_BorlandC_inline.h" />
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_CustomVMs.h" />
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_CustomVMs_BorlandC_inline.h" />
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_CustomVMs_GNU_inline.h" />
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_CustomVMs_ICL_inline.h" />
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_CustomVMs_LCC_inline.h" />
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_CustomVMs_VC_inline.h" />
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_GNU_inline.h" />
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_ICL_inline.h" />
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_LCC_inline.h" />
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_VC_inline.h" />
+    <ClInclude Include="Hooks\core\ForceCursorVisible.hpp" />
+    <ClInclude Include="Hooks\Hooks.hpp" />
+    <ClInclude Include="Hooks\Collision\Collision.hpp" />
+    <ClInclude Include="Hooks\d3d9\Present.hpp" />
+    <ClInclude Include="Hooks\d3d9\Reset.hpp" />
+    <ClInclude Include="Hooks\netc\Bypass.hpp" />
+    <ClInclude Include="Hooks\LdrDll\LdrDll.hpp" />
+    <ClInclude Include="Game\Features.h" />
+    <ClInclude Include="Game\Common.hpp" />
+    <ClInclude Include="Game\Legit\Triggerbot.hpp" />
+    <ClInclude Include="Game\Misc\AirBreak.hpp" />
+    <ClInclude Include="Game\Misc\AutoEngine.hpp" />
+    <ClInclude Include="Game\Misc\AutoUnlock.hpp" />
+    <ClInclude Include="Game\Misc\KeyBinds.hpp" />
+    <ClInclude Include="Game\Misc\NoFall.hpp" />
+    <ClInclude Include="Game\Misc\CamHack.hpp" />
+    <ClInclude Include="Game\Misc\FastRot.hpp" />
+    <ClInclude Include="Game\Misc\FastRun.hpp" />
+    <ClInclude Include="Game\Misc\Flip.hpp" />
+    <ClInclude Include="Game\Misc\GameSpeed.hpp" />
+    <ClInclude Include="Game\Misc\GodMode.hpp" />
+    <ClInclude Include="Game\Misc\NoBikeFall.hpp" />
+    <ClInclude Include="Game\Misc\Repair.hpp" />
+    <ClInclude Include="Game\Misc\Skin.hpp" />
+    <ClInclude Include="Game\Misc\VehicleFlags.hpp" />
+    <ClInclude Include="Game\Rage\FastCrosshair.hpp" />
+    <ClInclude Include="Game\Rage\InfAmmo.hpp" />
+    <ClInclude Include="Game\Rage\NoRecoil.hpp" />
+    <ClInclude Include="Game\Rage\NoSpread.hpp" />
+    <ClInclude Include="Game\Rage\RapidFire.hpp" />
+    <ClInclude Include="Game\Visuals\Aspect.hpp" />
+    <ClInclude Include="Game\Visuals\Esp.hpp" />
+    <ClInclude Include="Game\Visuals\Fov.hpp" />
+    <ClInclude Include="Game\Visuals\NoCamCol.hpp" />
+    <ClInclude Include="Game\Visuals\Timecycle.hpp" />
+    <ClInclude Include="Game\Visuals\World.hpp" />
+    <ClInclude Include="Menu\Menu.hpp" />
+    <ClInclude Include="Menu\Widgets.hpp" />
+    <ClInclude Include="Menu\Binds.hpp" />
+    <ClInclude Include="Core\Color.hpp" />
+    <ClInclude Include="Core\Config.hpp" />
+    <ClInclude Include="Gfx\Blur.hpp" />
+    <ClInclude Include="Gfx\Fonts.hpp" />
+    <ClInclude Include="Gfx\Texture.hpp" />
+    <ClInclude Include="Assets\Assets.hpp" />
+    <ClInclude Include="Utils\xorstr.h" />
+    <ClInclude Include="Utils\PatternScan.hpp" />
+    <ClInclude Include="Utils\D3D9.hpp" />
+    <ClInclude Include="Utils\Sdk.hpp" />
+    <ClInclude Include="..\thirdparty\imgui\imconfig.h" />
+    <ClInclude Include="..\thirdparty\imgui\imgui.h" />
+    <ClInclude Include="..\thirdparty\imgui\imgui_internal.h" />
+    <ClInclude Include="..\thirdparty\imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="..\thirdparty\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="..\thirdparty\imgui\imgui_freetype.h" />
+    <ClInclude Include="..\thirdparty\imgui\imgui_freetype.cpp" />
+    <ClInclude Include="..\thirdparty\imgui\imstb_rectpack.h" />
+    <ClInclude Include="..\thirdparty\imgui\imstb_textedit.h" />
+    <ClInclude Include="..\thirdparty\imgui\imstb_truetype.h" />
+    <ClInclude Include="..\thirdparty\imgui\imstb_wrapper.h" />
+    <ClInclude Include="..\thirdparty\imgui\shader_blur_x.h" />
+    <ClInclude Include="..\thirdparty\imgui\shader_blur_y.h" />
+    <ClInclude Include="..\thirdparty\imgui\shader_default_vs.h" />
+    <ClInclude Include="..\thirdparty\MinHook\minhook.hpp" />
+    <ClInclude Include="..\thirdparty\MinHook\buffer.hpp" />
+    <ClInclude Include="..\thirdparty\MinHook\trampoline.hpp" />
+    <ClInclude Include="..\thirdparty\MinHook\hde\hde32.hpp" />
+    <ClInclude Include="..\thirdparty\MinHook\hde\hde64.hpp" />
+    <ClInclude Include="..\thirdparty\MinHook\hde\pstdint.hpp" />
+    <ClInclude Include="..\thirdparty\MinHook\hde\table32.hpp" />
+    <ClInclude Include="..\thirdparty\MinHook\hde\table64.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

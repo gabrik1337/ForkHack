@@ -1,0 +1,143 @@
+﻿  Config.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Core/Config.cpp")
+  
+  AirBreak.cpp
+C:\Users\user\source\repos\ForkHack\ForkHack\Game\Misc\AirBreak.cpp(91,35): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Game\Misc\AirBreak.cpp(92,35): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Game\Misc\AirBreak.cpp(97,35): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Game\Misc\AirBreak.cpp(98,35): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Game\Misc\AirBreak.cpp(148,44): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Game\Misc\AirBreak.cpp(149,44): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+  FastRun.cpp
+  Esp.cpp
+  Hooks.cpp
+  LdrDll.cpp
+  ForceCursorVisible.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Hooks/core/ForceCursorVisible.cpp")
+  
+C:\Users\user\source\repos\ForkHack\ForkHack\Utils\PatternScan.hpp(26,44): warning C4244: аргумент: преобразование "unsigned long" в "_Ty", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Utils\PatternScan.hpp(26,44): warning C4244:         with
+C:\Users\user\source\repos\ForkHack\ForkHack\Utils\PatternScan.hpp(26,44): warning C4244:         [
+C:\Users\user\source\repos\ForkHack\ForkHack\Utils\PatternScan.hpp(26,44): warning C4244:             _Ty=char
+C:\Users\user\source\repos\ForkHack\ForkHack\Utils\PatternScan.hpp(26,44): warning C4244:         ]
+  (компиляция исходного файла "Hooks/core/ForceCursorVisible.cpp")
+  
+  Present.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Hooks/d3d9/Present.cpp")
+  
+C:\Users\user\source\repos\ForkHack\ForkHack\Hooks\d3d9\Present.cpp(190,123): warning C4244: аргумент: преобразование "LONG" в "float", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Hooks\d3d9\Present.cpp(190,116): warning C4244: аргумент: преобразование "LONG" в "float", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Hooks\d3d9\Present.cpp(190,98): warning C4244: аргумент: преобразование "LONG" в "float", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Hooks\d3d9\Present.cpp(190,90): warning C4244: аргумент: преобразование "LONG" в "float", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Hooks\d3d9\Present.cpp(190,77): warning C4244: аргумент: преобразование "LONG" в "float", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Hooks\d3d9\Present.cpp(190,70): warning C4244: аргумент: преобразование "LONG" в "float", возможна потеря данных
+  Reset.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Hooks/d3d9/Reset.cpp")
+  
+  Bypass.cpp
+C:\Users\user\source\repos\ForkHack\ForkHack\Utils\PatternScan.hpp(26,44): warning C4244: аргумент: преобразование "unsigned long" в "_Ty", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Utils\PatternScan.hpp(26,44): warning C4244:         with
+C:\Users\user\source\repos\ForkHack\ForkHack\Utils\PatternScan.hpp(26,44): warning C4244:         [
+C:\Users\user\source\repos\ForkHack\ForkHack\Utils\PatternScan.hpp(26,44): warning C4244:             _Ty=char
+C:\Users\user\source\repos\ForkHack\ForkHack\Utils\PatternScan.hpp(26,44): warning C4244:         ]
+  (компиляция исходного файла "Hooks/netc/Bypass.cpp")
+  
+  Binds.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Menu/Binds.cpp")
+  
+  BindsWindow.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Menu/BindsWindow.cpp")
+  
+  Menu.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Menu/Menu.cpp")
+  
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Menu.cpp(290,127): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Menu.cpp(310,223): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Menu.cpp(314,103): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Menu.cpp(318,128): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Menu.cpp(319,138): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Menu.cpp(320,123): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Menu.cpp(384,106): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  Legit.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Menu/Tabs/Legit.cpp")
+  
+  Misc.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Menu/Tabs/Misc.cpp")
+  
+  Profile.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Menu/Tabs/Profile.cpp")
+  
+  Rage.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Menu/Tabs/Rage.cpp")
+  
+  Visuals.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Menu/Tabs/Visuals.cpp")
+  
+  Button.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Menu/Widgets/Button.cpp")
+  
+  Checkbox.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Menu/Widgets/Checkbox.cpp")
+  
+  Компиляция...
+  ColorPicker.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Menu/Widgets/ColorPicker.cpp")
+  
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Widgets\ColorPicker.cpp(470,120): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Widgets\ColorPicker.cpp(470,103): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Widgets\ColorPicker.cpp(470,86): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Widgets\ColorPicker.cpp(470,69): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Widgets\ColorPicker.cpp(594,164): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Widgets\ColorPicker.cpp(594,147): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Widgets\ColorPicker.cpp(594,130): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Widgets\ColorPicker.cpp(594,113): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Widgets\ColorPicker.cpp(603,142): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Widgets\ColorPicker.cpp(603,122): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Widgets\ColorPicker.cpp(603,102): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Widgets\ColorPicker.cpp(603,82): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  Combo.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Menu/Widgets/Combo.cpp")
+  
+  Keybind.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Menu/Widgets/Keybind.cpp")
+  
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Widgets\Keybind.cpp(90,59): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Widgets\Keybind.cpp(90,90): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Widgets\Keybind.cpp(99,74): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  List.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Menu/Widgets/List.cpp")
+  
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Widgets\List.cpp(50,84): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+C:\Users\user\source\repos\ForkHack\ForkHack\Menu\Widgets\List.cpp(51,62): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  Slider.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Menu/Widgets/Slider.cpp")
+  
+  Text.cpp
+C:\Users\user\source\repos\ForkHack\thirdparty\imgui\imgui.h(190,33): warning C4244: return: преобразование "double" в "float", возможна потеря данных
+  (компиляция исходного файла "Menu/Widgets/Text.cpp")
+  
+  Создание кода
+  914 of 4503 functions (20.3%) were compiled, the rest were copied from previous compilation.
+    9 functions were new in current compilation
+    78 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  ForkHack.vcxproj -> C:\Users\user\source\repos\ForkHack\Release\ForkHack.dll

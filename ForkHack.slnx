@@ -1,0 +1,12 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Beta" />
+    <BuildType Name="Debug" />
+    <BuildType Name="Release" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="ForkHack/ForkHack.vcxproj" Id="50f067db-d29d-4253-972d-6b9216429909">
+    <Platform Solution="Beta|x64" Project="Win32" />
+  </Project>
+</Solution>

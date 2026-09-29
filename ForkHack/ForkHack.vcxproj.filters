@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Hooks">
+      <UniqueIdentifier>{da8517a6-2ed4-4ab6-96b3-6dfa42d6a7df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\Collision">
+      <UniqueIdentifier>{b3f2c8e4-7a1d-4f5b-9c2e-5d8a3f1b6c4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\d3d9">
+      <UniqueIdentifier>{c27a165d-076d-4b34-8cf5-6c21ba2a42dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\user32">
+      <UniqueIdentifier>{9be34b71-0111-4852-87e6-5cbed7ef1550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\netc">
+      <UniqueIdentifier>{e8f1a2b3-4c5d-4e6f-8a9b-0c1d2e3f4a5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\LdrDll">
+      <UniqueIdentifier>{f9a3b4c5-6d7e-4f8a-9b0c-1d2e3f4a5b6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{A3F1C4D2-8B5E-4F7A-9C1D-2E3F4A5B6C7D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Rage">
+      <UniqueIdentifier>{d4a7c2e9-6b1f-4a8c-9d3e-2f5a6b8c9d0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Legit">
+      <UniqueIdentifier>{e5b8d3f0-7c2a-4b9d-8e4f-3a6b7c9d0e1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Visuals">
+      <UniqueIdentifier>{f6c9e4a1-8d3b-4c0e-9f5a-4b7c8d9e0f2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Misc">
+      <UniqueIdentifier>{a7d0f5b2-9e4c-4d1f-8a6b-5c8d9e0f1b3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{bbf4c725-f375-4d5a-9691-46d7905f0611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Tabs">
+      <UniqueIdentifier>{7f3a9b21-4c5d-4e6f-a7b8-91a2b3c4d5e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu\Widgets">
+      <UniqueIdentifier>{8e4b0c32-5d6e-4f7a-b8c9-02b3c4d5e6f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{a3f5c2d1-8b4e-4f1a-9c3d-2e5f6a7b8c9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gfx">
+      <UniqueIdentifier>{e7b8d4f2-1c5d-4e6f-8a9b-3f4c5d6e7f8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{c1d2e3f4-5a6b-4c7d-8e9f-0a1b2c3d4e5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{d4e5f6a7-8b9c-4d1e-9f0a-1b2c3d4e5f6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty">
+      <UniqueIdentifier>{906b0c7e-16f8-4fd0-8f11-67c3c2c1e81a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\imgui">
+      <UniqueIdentifier>{f7f3c9ff-0184-4e58-9272-1e473f9e6c99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\MinHook">
+      <UniqueIdentifier>{3d93a599-629e-4cf7-8bff-f9019397fe7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hooks\core">
+      <UniqueIdentifier>{c4dffbed-711f-4e9b-b1ed-7a1e6914a801}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdparty\Virt">
+      <UniqueIdentifier>{76241c58-6e30-4c5e-8521-e71745233556}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClInclude Include="Utils\xorstr.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\PatternScan.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\D3D9.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Sdk.hpp">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClCompile Include="Hooks\Hooks.cpp">
+      <Filter>Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks\Collision\Collision.cpp">
+      <Filter>Hooks\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks\d3d9\Present.cpp">
+      <Filter>Hooks\d3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks\d3d9\Reset.cpp">
+      <Filter>Hooks\d3d9</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks\netc\Bypass.cpp">
+      <Filter>Hooks\netc</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks\LdrDll\LdrDll.cpp">
+      <Filter>Hooks\LdrDll</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Legit\Triggerbot.cpp">
+      <Filter>Game\Legit</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Misc\AirBreak.cpp">
+      <Filter>Game\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Misc\AutoEngine.cpp">
+      <Filter>Game\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Misc\AutoUnlock.cpp">
+      <Filter>Game\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Misc\KeyBinds.cpp">
+      <Filter>Game\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Misc\NoFall.cpp">
+      <Filter>Game\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Misc\FastRot.cpp">
+      <Filter>Game\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Misc\FastRun.cpp">
+      <Filter>Game\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Misc\CamHack.cpp">
+      <Filter>Game\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Misc\Flip.cpp">
+      <Filter>Game\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Misc\GameSpeed.cpp">
+      <Filter>Game\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Misc\GodMode.cpp">
+      <Filter>Game\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Misc\NoBikeFall.cpp">
+      <Filter>Game\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Misc\Repair.cpp">
+      <Filter>Game\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Misc\Skin.cpp">
+      <Filter>Game\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Misc\VehicleFlags.cpp">
+      <Filter>Game\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Rage\FastCrosshair.cpp">
+      <Filter>Game\Rage</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Rage\InfAmmo.cpp">
+      <Filter>Game\Rage</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Rage\NoRecoil.cpp">
+      <Filter>Game\Rage</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Rage\NoSpread.cpp">
+      <Filter>Game\Rage</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Rage\RapidFire.cpp">
+      <Filter>Game\Rage</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Visuals\Aspect.cpp">
+      <Filter>Game\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Visuals\Esp.cpp">
+      <Filter>Game\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Visuals\Fov.cpp">
+      <Filter>Game\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Visuals\NoCamCol.cpp">
+      <Filter>Game\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Visuals\Timecycle.cpp">
+      <Filter>Game\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Visuals\World.cpp">
+      <Filter>Game\Visuals</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Sdk.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Menu.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Binds.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\BindsWindow.cpp">
+      <Filter>Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Tabs\Rage.cpp">
+      <Filter>Menu\Tabs</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Tabs\Legit.cpp">
+      <Filter>Menu\Tabs</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Tabs\Visuals.cpp">
+      <Filter>Menu\Tabs</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Tabs\Misc.cpp">
+      <Filter>Menu\Tabs</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Tabs\Profile.cpp">
+      <Filter>Menu\Tabs</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Widgets\Checkbox.cpp">
+      <Filter>Menu\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Widgets\Slider.cpp">
+      <Filter>Menu\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Widgets\Combo.cpp">
+      <Filter>Menu\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Widgets\Button.cpp">
+      <Filter>Menu\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Widgets\ColorPicker.cpp">
+      <Filter>Menu\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Widgets\Keybind.cpp">
+      <Filter>Menu\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Widgets\List.cpp">
+      <Filter>Menu\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Menu\Widgets\Text.cpp">
+      <Filter>Menu\Widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Color.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Config.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\Blur.cpp">
+      <Filter>Gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\Fonts.cpp">
+      <Filter>Gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Gfx\Texture.cpp">
+      <Filter>Gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="Assets\Assets.cpp">
+      <Filter>Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\imgui\imgui.cpp">
+      <Filter>thirdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\imgui\imgui_demo.cpp">
+      <Filter>thirdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\imgui\imgui_draw.cpp">
+      <Filter>thirdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\imgui\imgui_widgets.cpp">
+      <Filter>thirdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\imgui\imgui_impl_dx9.cpp">
+      <Filter>thirdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\imgui\imgui_impl_win32.cpp">
+      <Filter>thirdparty\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\MinHook\buffer.cpp">
+      <Filter>thirdparty\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\MinHook\hook.cpp">
+      <Filter>thirdparty\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\MinHook\trampoline.cpp">
+      <Filter>thirdparty\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\MinHook\hde\hde32.cpp">
+      <Filter>thirdparty\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="..\thirdparty\MinHook\hde\hde64.cpp">
+      <Filter>thirdparty\MinHook</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooks\core\ForceCursorVisible.cpp">
+      <Filter>Hooks\core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Hooks\Hooks.hpp">
+      <Filter>Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\Collision\Collision.hpp">
+      <Filter>Hooks\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\d3d9\Present.hpp">
+      <Filter>Hooks\d3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\d3d9\Reset.hpp">
+      <Filter>Hooks\d3d9</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\netc\Bypass.hpp">
+      <Filter>Hooks\netc</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\LdrDll\LdrDll.hpp">
+      <Filter>Hooks\LdrDll</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Features.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Common.hpp">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Legit\Triggerbot.hpp">
+      <Filter>Game\Legit</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Misc\AirBreak.hpp">
+      <Filter>Game\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Misc\AutoEngine.hpp">
+      <Filter>Game\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Misc\AutoUnlock.hpp">
+      <Filter>Game\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Misc\KeyBinds.hpp">
+      <Filter>Game\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Misc\NoFall.hpp">
+      <Filter>Game\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Misc\FastRot.hpp">
+      <Filter>Game\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Misc\FastRun.hpp">
+      <Filter>Game\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Misc\CamHack.hpp">
+      <Filter>Game\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Misc\Flip.hpp">
+      <Filter>Game\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Misc\GameSpeed.hpp">
+      <Filter>Game\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Misc\GodMode.hpp">
+      <Filter>Game\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Misc\NoBikeFall.hpp">
+      <Filter>Game\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Misc\Repair.hpp">
+      <Filter>Game\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Misc\Skin.hpp">
+      <Filter>Game\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Misc\VehicleFlags.hpp">
+      <Filter>Game\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Rage\FastCrosshair.hpp">
+      <Filter>Game\Rage</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Rage\InfAmmo.hpp">
+      <Filter>Game\Rage</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Rage\NoRecoil.hpp">
+      <Filter>Game\Rage</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Rage\NoSpread.hpp">
+      <Filter>Game\Rage</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Rage\RapidFire.hpp">
+      <Filter>Game\Rage</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Visuals\Aspect.hpp">
+      <Filter>Game\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Visuals\Esp.hpp">
+      <Filter>Game\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Visuals\Fov.hpp">
+      <Filter>Game\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Visuals\NoCamCol.hpp">
+      <Filter>Game\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Visuals\Timecycle.hpp">
+      <Filter>Game\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Visuals\World.hpp">
+      <Filter>Game\Visuals</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Menu.hpp">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Widgets.hpp">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Binds.hpp">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Color.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Config.hpp">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\Blur.hpp">
+      <Filter>Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\Fonts.hpp">
+      <Filter>Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Gfx\Texture.hpp">
+      <Filter>Gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="Assets\Assets.hpp">
+      <Filter>Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imconfig.h">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imgui.h">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imgui_internal.h">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imgui_impl_dx9.h">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imgui_impl_win32.h">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imgui_freetype.h">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imgui_freetype.cpp">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imstb_rectpack.h">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imstb_textedit.h">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imstb_truetype.h">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\imstb_wrapper.h">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\shader_blur_x.h">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\shader_blur_y.h">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\imgui\shader_default_vs.h">
+      <Filter>thirdparty\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\MinHook\minhook.hpp">
+      <Filter>thirdparty\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\MinHook\buffer.hpp">
+      <Filter>thirdparty\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\MinHook\trampoline.hpp">
+      <Filter>thirdparty\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\MinHook\hde\hde32.hpp">
+      <Filter>thirdparty\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\MinHook\hde\hde64.hpp">
+      <Filter>thirdparty\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\MinHook\hde\pstdint.hpp">
+      <Filter>thirdparty\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\MinHook\hde\table32.hpp">
+      <Filter>thirdparty\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\MinHook\hde\table64.hpp">
+      <Filter>thirdparty\MinHook</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooks\core\ForceCursorVisible.hpp">
+      <Filter>Hooks\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK.h">
+      <Filter>thirdparty\Virt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_BorlandC_inline.h">
+      <Filter>thirdparty\Virt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_CustomVMs.h">
+      <Filter>thirdparty\Virt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_CustomVMs_BorlandC_inline.h">
+      <Filter>thirdparty\Virt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_CustomVMs_GNU_inline.h">
+      <Filter>thirdparty\Virt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_CustomVMs_ICL_inline.h">
+      <Filter>thirdparty\Virt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_CustomVMs_LCC_inline.h">
+      <Filter>thirdparty\Virt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_CustomVMs_VC_inline.h">
+      <Filter>thirdparty\Virt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_GNU_inline.h">
+      <Filter>thirdparty\Virt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_ICL_inline.h">
+      <Filter>thirdparty\Virt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_LCC_inline.h">
+      <Filter>thirdparty\Virt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\thirdparty\virtualiser\VirtualizerSDK_VC_inline.h">
+      <Filter>thirdparty\Virt</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

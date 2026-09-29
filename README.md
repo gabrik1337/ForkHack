@@ -28,5 +28,5 @@ Build the project in Release | Win32 and inject the resulting DLL into MTA:SA.
 
 * **ShunK**
 * **Akira**
-* **DroidZero**
-* **Kirill Sorokin**
+* **DroidZero // NtKernelMC**
+* **Kirill Sorokin // gamesnus**

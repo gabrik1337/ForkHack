@@ -1,6 +1,6 @@
 # ForkHack
 
-ForkHack — internal cheat for MTA:SA.
+ForkHack — internal cheat for MTA:SA FORKS like NEXTRP, MTA PROVINCE for oficcial MTA you need update bypass.cpp/hpp.
 
 Made as a base for your own projects and easy to understand for beginners. Everything is split into separate files, so features, hooks and menu are easy to find and edit.
 

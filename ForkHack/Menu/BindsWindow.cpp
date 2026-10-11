@@ -47,6 +47,7 @@ static std::string Bind_Display_Name(int i)
     case 33: return tr("Без колизии камеры", "No camera collision");
     case 34: return tr("Камхак", "Camhack");
     case 35: return tr("Без урона от падения", "No fall damage");
+    case 36: return tr("Анти-фриз", "Anti freeze");
     default: return "";
     }
 }
@@ -102,6 +103,7 @@ void Menu::DrawBinds()
         { &g_cfg.nocamcol_bind, &g_cfg.nocamcol, false },
         { &g_cfg.camhack_bind, &g_cfg.camhack, false },
         { &g_cfg.nofall_bind, &g_cfg.nofall, false },
+        { &g_cfg.antifreeze_bind, &g_cfg.antifreeze, false },
     };
 
     static const int kBindCount = sizeof(kBinds) / sizeof(kBinds[0]);

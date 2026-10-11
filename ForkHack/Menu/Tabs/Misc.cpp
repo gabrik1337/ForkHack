@@ -47,6 +47,7 @@ void Menu::DrawMisc()
             GroupBegin(tr("Защита", "Protection"));
             BindableCheckbox("godmode", tr("Годмод", "Godmode"), &g_cfg.godmode, &g_cfg.godmode_bind);
             BindableCheckbox("nofall", tr("Без урона от падения", "No fall damage"), &g_cfg.nofall, &g_cfg.nofall_bind);
+            BindableCheckbox("antifreeze", tr("Анти-фриз", "Anti freeze"), &g_cfg.antifreeze, &g_cfg.antifreeze_bind);
             GroupEnd();
             GroupBegin(tr("Скин", "Skin"));
             BindableCheckbox("change_skin", tr("Поменять скин", "Change skin"), &g_cfg.changemodel, &g_cfg.changemodel_bind);
@@ -155,6 +156,11 @@ void Menu::DrawMisc()
             if (Button(tr("Перевернуть", "Flip over")))
             {
                 Flip::Update();
+            }
+            Keybind(tr("Бинд выхода", "Exit bind"), &g_cfg.fastexit_bind);
+            if (Button(tr("Быстрый выход", "Fast exit")))
+            {
+                FastExit::Trigger();
             }
             BindableCheckbox("speedhack", tr("Спидхак", "Speedhack"), &g_cfg.speedhack, &g_cfg.speedhack_bind);
             CreateAnimation(spd_fade, g_cfg.speedhack, 0.3f, AnimLerp);

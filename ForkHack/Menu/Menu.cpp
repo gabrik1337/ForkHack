@@ -14,6 +14,8 @@
 
 #include "Game/Features.h"
 
+#include "Hooks/core/ForceCursorVisible.hpp"
+
 Menu* menu = new Menu;
 
 static bool s_dragging = false;
@@ -45,6 +47,30 @@ bool Menu::ToggleState()
     g_cfg.menu_open = !g_cfg.menu_open;
 
     return g_cfg.menu_open;
+}
+
+void Menu::HandleToggleKey()
+{
+    if (!(GetAsyncKeyState(VK_DELETE) & 1))
+    {
+        return;
+    }
+
+    ToggleState();
+
+    if (!Cself)
+    {
+        return;
+    }
+
+    if (GetState())
+    {
+        callForceCursorVisible(Cself, true, true);
+    }
+    else
+    {
+        callForceCursorVisible(Cself, false, false);
+    }
 }
 
 void Menu::SetDrawList(ImDrawList* list)

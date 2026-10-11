@@ -115,64 +115,19 @@ HRESULT __stdcall hkPresent(IDirect3DDevice9* self, const RECT* sourceRect, cons
     Triggerbot::Update();
     NoCamCol::Update();
     CamHack::Update();
-    CamHack::Update();
 
     Esp::Update();
 
     GodMode::Update();
     NoFall::Update();
+    AntiFreeze::Update();
     FastRun::Update();
+    FastExit::Update();
 
-    if (g_cfg.speedhack && !g_cfg.airbreake)
-    {
-        static DWORD lastTick = 0;
-        DWORD now = GetTickCount();
-
-        if (now - lastTick >= 50)
-        {
-            lastTick = now;
-
-            CPed* pPedSelf = FindPlayerPed();
-
-            if (pPedSelf)
-            {
-                CVehicle* veh = pPedSelf->m_pVehicle;
-
-                if (veh && veh->m_pDriver == pPedSelf)
-                {
-                    CVector& vel = veh->m_vecMoveSpeed;
-                    float direction = VecLength(vel);
-
-                    if (direction > 0.01f)
-                    {
-                        float power = std::clamp(g_cfg.MaxSpd, 0.0f, 30.0f);
-                        float boost = power / 180.0f;
-                        vel.x += (vel.x / direction) * boost;
-                        vel.y += (vel.y / direction) * boost;
-                        vel.z += (vel.z / direction) * boost;
-                    }
-                }
-            }
-        }
-    }
+    Speedhack::Update();
     Blur::NewFrame();
 
-    if (GetAsyncKeyState(VK_DELETE) & 1)
-    {
-        menu->ToggleState();
-
-        if (Cself)
-        {
-            if (menu->GetState())
-            {
-                callForceCursorVisible(Cself, true, true);
-            }
-            else
-            {
-                callForceCursorVisible(Cself, false, false);
-            }
-        }
-    }
+    menu->HandleToggleKey();
 
     menu->Draw();
     menu->DrawBinds();

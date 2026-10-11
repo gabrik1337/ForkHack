@@ -86,6 +86,7 @@ public:
 
     bool GetState();
     bool ToggleState();
+    void HandleToggleKey();
     void SetDrawList(ImDrawList* list);
     void SetWindowPos(const ImVec2& pos);
     ImVec2 GetWindowPos();

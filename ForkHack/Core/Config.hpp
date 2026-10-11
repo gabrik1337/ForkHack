@@ -25,6 +25,8 @@ struct config_t
     keybind_t godmode_bind{};
     bool nofall = false;
     keybind_t nofall_bind{};
+    bool antifreeze = false;
+    keybind_t antifreeze_bind{};
     bool fastbeg = false;
     keybind_t fastbeg_bind{};
     float fastbegs = 1.0f;
@@ -34,6 +36,7 @@ struct config_t
     bool speedhack = false;
     keybind_t speedhack_bind{};
     float MaxSpd = 5.0f;
+    keybind_t fastexit_bind{};
     bool airbreake = false;
     keybind_t airbreake_bind{};
     bool changemodel = false;

@@ -4,6 +4,9 @@
 
 #include "Gfx/Fonts.hpp"
 
+#include "Hooks/netc/Spoofer.hpp"
+
+#include <cstring>
 #include <shellapi.h>
 
 void Menu::DrawProfile()
@@ -18,7 +21,7 @@ void Menu::DrawProfile()
             cfg_scanned = true;
         }
 
-        std::vector<std::string> items = { tr("Конфиг", "Config"), tr("Настройки", "Settings"), tr("Важное", "Important") };
+        std::vector<std::string> items = { tr("Конфиг", "Config"), tr("Настройки", "Settings"), tr("Спуфер", "Spoofer"), tr("Важное", "Important") };
         DrawSubTabs(sub4, items);
         UpdateSubFade(4, sub4);
         ImGui::SetCursorPosX(0);
@@ -144,7 +147,7 @@ void Menu::DrawProfile()
             }
             GroupEnd();
         }
-        else
+        else if (sub4 == 3)
         {
             ImGui::Columns(1);
             ImGui::Dummy(ImVec2(0, 55.0f * s));
@@ -185,6 +188,43 @@ void Menu::DrawProfile()
                 ShellExecuteA(NULL, "open", "https://t.me/gbr1337xd", NULL, NULL, SW_SHOWNORMAL);
                 ShellExecuteA(NULL, "open", "https://discord.com/users/1138590550635839488", NULL, NULL, SW_SHOWNORMAL);
             }
+        }
+        else
+        {
+            static char spooferInput[33] = "";
+            static int spooferMode = 0;
+            const std::string mode0 = tr("Свой", "Custom");
+            const std::string mode1 = tr("Случайный", "Random");
+            const char* modeItems[] = { mode0.c_str(), mode1.c_str() };
+
+            GroupBegin(tr("Спуфер", "Spoofer"));
+            Combo(tr("Режим", "Mode"), &spooferMode, modeItems, 2);
+            if (spooferMode == 0)
+            {
+                Textbox(tr("Серийник", "Serial"), spooferInput, sizeof(spooferInput));
+            }
+            else
+            {
+                ImGui::Text(tr("Нажми Сгенерировать", "Press Generate"));
+            }
+            if (spooferMode == 0)
+            {
+                if (Button(tr("Спуф", "Spoof")))
+                {
+                    if (strlen(spooferInput) > 0)
+                    {
+                        Spoofer::ApplyCustom(spooferInput);
+                    }
+                }
+            }
+            else
+            {
+                if (Button(tr("Сгенерировать", "Generate")))
+                {
+                    Spoofer::ApplyRandom();
+                }
+            }
+            GroupEnd();
         }
 
         ImGui::EndChild(false);

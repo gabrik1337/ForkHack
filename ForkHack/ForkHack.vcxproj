@@ -50,7 +50,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;IMGUI_DEFINE_MATH_OPERATORS;IMGUI_USE_BGRA_PACKED_COLOR;GTASA;RW;PLUGIN_SGV_10US;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;IMGUI_DEFINE_MATH_OPERATORS;IMGUI_USE_BGRA_PACKED_COLOR;GTASA;RW;PLUGIN_SGV_10US;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)Utils;$(ProjectDir)..\thirdparty\MinHook;$(ProjectDir)..\thirdparty\imgui;C:\Users\user\Desktop\plugin-sdk-master\shared;C:\Users\user\Desktop\plugin-sdk-master\shared\game;C:\Users\user\Desktop\plugin-sdk-master\plugin_sa\game_sa\rw;C:\Users\user\Desktop\plugin-sdk-master\plugin_sa;C:\Users\user\Desktop\plugin-sdk-master\plugin_sa\game_sa;C:\Users\user\Desktop\plugin-sdk-master\plugin_sa\game_sa\enums;C:\Users\user\Desktop\plugin-sdk-master\shared\extensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp23</LanguageStandard>
@@ -69,7 +69,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;BETA_BUILD;IMGUI_DEFINE_MATH_OPERATORS;IMGUI_USE_BGRA_PACKED_COLOR;GTASA;RW;PLUGIN_SGV_10US;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;BETA_BUILD;_CRT_SECURE_NO_WARNINGS;IMGUI_DEFINE_MATH_OPERATORS;IMGUI_USE_BGRA_PACKED_COLOR;GTASA;RW;PLUGIN_SGV_10US;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)Utils;$(ProjectDir)..\thirdparty\MinHook;$(ProjectDir)..\thirdparty\imgui;C:\Users\user\Desktop\plugin-sdk-master\shared;C:\Users\user\Desktop\plugin-sdk-master\shared\game;C:\Users\user\Desktop\plugin-sdk-master\plugin_sa\game_sa\rw;C:\Users\user\Desktop\plugin-sdk-master\plugin_sa;C:\Users\user\Desktop\plugin-sdk-master\plugin_sa\game_sa;C:\Users\user\Desktop\plugin-sdk-master\plugin_sa\game_sa\enums;C:\Users\user\Desktop\plugin-sdk-master\shared\extensions;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp23</LanguageStandard>
@@ -89,24 +89,28 @@
     <ClCompile Include="Hooks\Collision\Collision.cpp" />
     <ClCompile Include="Hooks\d3d9\Present.cpp" />
     <ClCompile Include="Hooks\d3d9\Reset.cpp" />
-    <ClCompile Include="Hooks\netc\Bypass.cpp" />
+    <ClCompile Include="Hooks\netc\Bypass.cpp" />
+    <ClCompile Include="Hooks\netc\Spoofer.cpp" />
     <ClCompile Include="Hooks\LdrDll\LdrDll.cpp" />
     <ClCompile Include="Game\Legit\Triggerbot.cpp" />
-    <ClCompile Include="Game\Misc\AirBreak.cpp" />
-    <ClCompile Include="Game\Misc\AutoEngine.cpp" />
-    <ClCompile Include="Game\Misc\AutoUnlock.cpp" />
-    <ClCompile Include="Game\Misc\KeyBinds.cpp" />
-    <ClCompile Include="Game\Misc\NoFall.cpp" />
-    <ClCompile Include="Game\Misc\CamHack.cpp" />
-    <ClCompile Include="Game\Misc\FastRot.cpp" />
-    <ClCompile Include="Game\Misc\FastRun.cpp" />
-    <ClCompile Include="Game\Misc\Flip.cpp" />
-    <ClCompile Include="Game\Misc\GameSpeed.cpp" />
-    <ClCompile Include="Game\Misc\GodMode.cpp" />
-    <ClCompile Include="Game\Misc\NoBikeFall.cpp" />
-    <ClCompile Include="Game\Misc\Repair.cpp" />
-    <ClCompile Include="Game\Misc\Skin.cpp" />
-    <ClCompile Include="Game\Misc\VehicleFlags.cpp" />
+    <ClCompile Include="Game\Misc\Player\AirBreak.cpp" />
+    <ClCompile Include="Game\Misc\Vehicle\AutoEngine.cpp" />
+    <ClCompile Include="Game\Misc\Vehicle\AutoUnlock.cpp" />
+    <ClCompile Include="Game\Misc\Other\KeyBinds.cpp" />
+    <ClCompile Include="Game\Misc\Player\NoFall.cpp" />
+    <ClCompile Include="Game\Misc\Player\AntiFreeze.cpp" />
+    <ClCompile Include="Game\Misc\Other\CamHack.cpp" />
+    <ClCompile Include="Game\Misc\Player\FastRot.cpp" />
+    <ClCompile Include="Game\Misc\Player\FastRun.cpp" />
+    <ClCompile Include="Game\Misc\Vehicle\Flip.cpp" />
+    <ClCompile Include="Game\Misc\Vehicle\FastExit.cpp" />
+    <ClCompile Include="Game\Misc\Other\GameSpeed.cpp" />
+    <ClCompile Include="Game\Misc\Player\GodMode.cpp" />
+    <ClCompile Include="Game\Misc\Vehicle\NoBikeFall.cpp" />
+    <ClCompile Include="Game\Misc\Vehicle\Repair.cpp" />
+    <ClCompile Include="Game\Misc\Player\Skin.cpp" />
+    <ClCompile Include="Game\Misc\Vehicle\Speedhack.cpp" />
+    <ClCompile Include="Game\Misc\Vehicle\VehicleFlags.cpp" />
     <ClCompile Include="Game\Rage\FastCrosshair.cpp" />
     <ClCompile Include="Game\Rage\InfAmmo.cpp" />
     <ClCompile Include="Game\Rage\NoRecoil.cpp" />
@@ -118,7 +122,8 @@
     <ClCompile Include="Game\Visuals\NoCamCol.cpp" />
     <ClCompile Include="Game\Visuals\Timecycle.cpp" />
     <ClCompile Include="Game\Visuals\World.cpp" />
-    <ClCompile Include="Utils\Sdk.cpp" />
+    <ClCompile Include="Utils\Sdk.cpp" />
+    <ClCompile Include="Utils\SString.cpp" />
     <ClCompile Include="Menu\Menu.cpp" />
     <ClCompile Include="Menu\Binds.cpp" />
     <ClCompile Include="Menu\BindsWindow.cpp" />
@@ -171,26 +176,30 @@
     <ClInclude Include="Hooks\Collision\Collision.hpp" />
     <ClInclude Include="Hooks\d3d9\Present.hpp" />
     <ClInclude Include="Hooks\d3d9\Reset.hpp" />
-    <ClInclude Include="Hooks\netc\Bypass.hpp" />
+    <ClInclude Include="Hooks\netc\Bypass.hpp" />
+    <ClInclude Include="Hooks\netc\Spoofer.hpp" />
     <ClInclude Include="Hooks\LdrDll\LdrDll.hpp" />
     <ClInclude Include="Game\Features.h" />
     <ClInclude Include="Game\Common.hpp" />
     <ClInclude Include="Game\Legit\Triggerbot.hpp" />
-    <ClInclude Include="Game\Misc\AirBreak.hpp" />
-    <ClInclude Include="Game\Misc\AutoEngine.hpp" />
-    <ClInclude Include="Game\Misc\AutoUnlock.hpp" />
-    <ClInclude Include="Game\Misc\KeyBinds.hpp" />
-    <ClInclude Include="Game\Misc\NoFall.hpp" />
-    <ClInclude Include="Game\Misc\CamHack.hpp" />
-    <ClInclude Include="Game\Misc\FastRot.hpp" />
-    <ClInclude Include="Game\Misc\FastRun.hpp" />
-    <ClInclude Include="Game\Misc\Flip.hpp" />
-    <ClInclude Include="Game\Misc\GameSpeed.hpp" />
-    <ClInclude Include="Game\Misc\GodMode.hpp" />
-    <ClInclude Include="Game\Misc\NoBikeFall.hpp" />
-    <ClInclude Include="Game\Misc\Repair.hpp" />
-    <ClInclude Include="Game\Misc\Skin.hpp" />
-    <ClInclude Include="Game\Misc\VehicleFlags.hpp" />
+    <ClInclude Include="Game\Misc\Player\AirBreak.hpp" />
+    <ClInclude Include="Game\Misc\Vehicle\AutoEngine.hpp" />
+    <ClInclude Include="Game\Misc\Vehicle\AutoUnlock.hpp" />
+    <ClInclude Include="Game\Misc\Other\KeyBinds.hpp" />
+    <ClInclude Include="Game\Misc\Player\NoFall.hpp" />
+    <ClInclude Include="Game\Misc\Player\AntiFreeze.hpp" />
+    <ClInclude Include="Game\Misc\Other\CamHack.hpp" />
+    <ClInclude Include="Game\Misc\Player\FastRot.hpp" />
+    <ClInclude Include="Game\Misc\Player\FastRun.hpp" />
+    <ClInclude Include="Game\Misc\Vehicle\Flip.hpp" />
+    <ClInclude Include="Game\Misc\Vehicle\FastExit.hpp" />
+    <ClInclude Include="Game\Misc\Other\GameSpeed.hpp" />
+    <ClInclude Include="Game\Misc\Player\GodMode.hpp" />
+    <ClInclude Include="Game\Misc\Vehicle\NoBikeFall.hpp" />
+    <ClInclude Include="Game\Misc\Vehicle\Repair.hpp" />
+    <ClInclude Include="Game\Misc\Player\Skin.hpp" />
+    <ClInclude Include="Game\Misc\Vehicle\Speedhack.hpp" />
+    <ClInclude Include="Game\Misc\Vehicle\VehicleFlags.hpp" />
     <ClInclude Include="Game\Rage\FastCrosshair.hpp" />
     <ClInclude Include="Game\Rage\InfAmmo.hpp" />
     <ClInclude Include="Game\Rage\NoRecoil.hpp" />
@@ -214,7 +223,8 @@
     <ClInclude Include="Utils\xorstr.h" />
     <ClInclude Include="Utils\PatternScan.hpp" />
     <ClInclude Include="Utils\D3D9.hpp" />
-    <ClInclude Include="Utils\Sdk.hpp" />
+    <ClInclude Include="Utils\Sdk.hpp" />
+    <ClInclude Include="Utils\SString.h" />
     <ClInclude Include="..\thirdparty\imgui\imconfig.h" />
     <ClInclude Include="..\thirdparty\imgui\imgui.h" />
     <ClInclude Include="..\thirdparty\imgui\imgui_internal.h" />

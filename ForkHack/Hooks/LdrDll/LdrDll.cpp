@@ -6,6 +6,7 @@
 #include "Utils/xorstr.h"
 
 #include "../netc/Bypass.hpp"
+#include "../netc/Spoofer.hpp"
 #include "../core/ForceCursorVisible.hpp"
 
 #include "LdrDll.hpp"
@@ -41,6 +42,7 @@ namespace
             {
                 netc_once = true;
                 Bypass::InstallHook();
+                Spoofer::InstallHook();
             }
 
             if (EndsWithIC(name, L"core.dll"))

@@ -38,6 +38,15 @@
     <Filter Include="Game\Misc">
       <UniqueIdentifier>{a7d0f5b2-9e4c-4d1f-8a6b-5c8d9e0f1b3c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Game\Misc\Player">
+      <UniqueIdentifier>{c2a84f11-7b3e-4c5a-9d1e-5f6a7b8c9d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Misc\Vehicle">
+      <UniqueIdentifier>{d3b95a22-8c4f-4d6b-ae2f-6a7b8c9d2e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Misc\Other">
+      <UniqueIdentifier>{e4ca6b33-9d5a-4e7c-bf3a-7b8c9d3f4a5}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Menu">
       <UniqueIdentifier>{bbf4c725-f375-4d5a-9691-46d7905f0611}</UniqueIdentifier>
     </Filter>
@@ -90,6 +99,12 @@
     </ClInclude>
     <ClInclude Include="Utils\Sdk.hpp">
       <Filter>Utils</Filter>
+    </ClInclude>
+
+    <ClInclude Include="Utils\SString.h">
+
+      <Filter>Utils</Filter>
+
     </ClInclude>
     <ClCompile Include="Hooks\Hooks.cpp">
       <Filter>Hooks</Filter>
@@ -105,6 +120,12 @@
     </ClCompile>
     <ClCompile Include="Hooks\netc\Bypass.cpp">
       <Filter>Hooks\netc</Filter>
+    </ClCompile>
+
+    <ClCompile Include="Hooks\netc\Spoofer.cpp">
+
+      <Filter>Hooks\netc</Filter>
+
     </ClCompile>
     <ClCompile Include="Hooks\LdrDll\LdrDll.cpp">
       <Filter>Hooks\LdrDll</Filter>
@@ -112,50 +133,59 @@
     <ClCompile Include="Game\Legit\Triggerbot.cpp">
       <Filter>Game\Legit</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Misc\AirBreak.cpp">
-      <Filter>Game\Misc</Filter>
+    <ClCompile Include="Game\Misc\Player\AirBreak.cpp">
+      <Filter>Game\Misc\Player</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Misc\AutoEngine.cpp">
-      <Filter>Game\Misc</Filter>
+    <ClCompile Include="Game\Misc\Vehicle\AutoEngine.cpp">
+      <Filter>Game\Misc\Vehicle</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Misc\AutoUnlock.cpp">
-      <Filter>Game\Misc</Filter>
+    <ClCompile Include="Game\Misc\Vehicle\AutoUnlock.cpp">
+      <Filter>Game\Misc\Vehicle</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Misc\KeyBinds.cpp">
-      <Filter>Game\Misc</Filter>
+    <ClCompile Include="Game\Misc\Other\KeyBinds.cpp">
+      <Filter>Game\Misc\Other</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Misc\NoFall.cpp">
-      <Filter>Game\Misc</Filter>
+    <ClCompile Include="Game\Misc\Player\NoFall.cpp">
+      <Filter>Game\Misc\Player</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Misc\FastRot.cpp">
-      <Filter>Game\Misc</Filter>
+    <ClCompile Include="Game\Misc\Player\AntiFreeze.cpp">
+      <Filter>Game\Misc\Player</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Misc\FastRun.cpp">
-      <Filter>Game\Misc</Filter>
+    <ClCompile Include="Game\Misc\Player\FastRot.cpp">
+      <Filter>Game\Misc\Player</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Misc\CamHack.cpp">
-      <Filter>Game\Misc</Filter>
+    <ClCompile Include="Game\Misc\Player\FastRun.cpp">
+      <Filter>Game\Misc\Player</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Misc\Flip.cpp">
-      <Filter>Game\Misc</Filter>
+    <ClCompile Include="Game\Misc\Other\CamHack.cpp">
+      <Filter>Game\Misc\Other</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Misc\GameSpeed.cpp">
-      <Filter>Game\Misc</Filter>
+    <ClCompile Include="Game\Misc\Vehicle\Flip.cpp">
+      <Filter>Game\Misc\Vehicle</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Misc\GodMode.cpp">
-      <Filter>Game\Misc</Filter>
+    <ClCompile Include="Game\Misc\Vehicle\FastExit.cpp">
+      <Filter>Game\Misc\Vehicle</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Misc\NoBikeFall.cpp">
-      <Filter>Game\Misc</Filter>
+    <ClCompile Include="Game\Misc\Other\GameSpeed.cpp">
+      <Filter>Game\Misc\Other</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Misc\Repair.cpp">
-      <Filter>Game\Misc</Filter>
+    <ClCompile Include="Game\Misc\Player\GodMode.cpp">
+      <Filter>Game\Misc\Player</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Misc\Skin.cpp">
-      <Filter>Game\Misc</Filter>
+    <ClCompile Include="Game\Misc\Vehicle\NoBikeFall.cpp">
+      <Filter>Game\Misc\Vehicle</Filter>
     </ClCompile>
-    <ClCompile Include="Game\Misc\VehicleFlags.cpp">
-      <Filter>Game\Misc</Filter>
+    <ClCompile Include="Game\Misc\Vehicle\Repair.cpp">
+      <Filter>Game\Misc\Vehicle</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Misc\Player\Skin.cpp">
+      <Filter>Game\Misc\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Misc\Vehicle\Speedhack.cpp">
+      <Filter>Game\Misc\Vehicle</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Misc\Vehicle\VehicleFlags.cpp">
+      <Filter>Game\Misc\Vehicle</Filter>
     </ClCompile>
     <ClCompile Include="Game\Rage\FastCrosshair.cpp">
       <Filter>Game\Rage</Filter>
@@ -192,6 +222,12 @@
     </ClCompile>
     <ClCompile Include="Utils\Sdk.cpp">
       <Filter>Utils</Filter>
+    </ClCompile>
+
+    <ClCompile Include="Utils\SString.cpp">
+
+      <Filter>Utils</Filter>
+
     </ClCompile>
     <ClCompile Include="Menu\Menu.cpp">
       <Filter>Menu</Filter>
@@ -311,6 +347,12 @@
     </ClInclude>
     <ClInclude Include="Hooks\netc\Bypass.hpp">
       <Filter>Hooks\netc</Filter>
+    </ClInclude>
+
+    <ClInclude Include="Hooks\netc\Spoofer.hpp">
+
+      <Filter>Hooks\netc</Filter>
+
     </ClInclude>
     <ClInclude Include="Hooks\LdrDll\LdrDll.hpp">
       <Filter>Hooks\LdrDll</Filter>
@@ -324,50 +366,59 @@
     <ClInclude Include="Game\Legit\Triggerbot.hpp">
       <Filter>Game\Legit</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Misc\AirBreak.hpp">
-      <Filter>Game\Misc</Filter>
+    <ClInclude Include="Game\Misc\Player\AirBreak.hpp">
+      <Filter>Game\Misc\Player</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Misc\AutoEngine.hpp">
-      <Filter>Game\Misc</Filter>
+    <ClInclude Include="Game\Misc\Vehicle\AutoEngine.hpp">
+      <Filter>Game\Misc\Vehicle</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Misc\AutoUnlock.hpp">
-      <Filter>Game\Misc</Filter>
+    <ClInclude Include="Game\Misc\Vehicle\AutoUnlock.hpp">
+      <Filter>Game\Misc\Vehicle</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Misc\KeyBinds.hpp">
-      <Filter>Game\Misc</Filter>
+    <ClInclude Include="Game\Misc\Other\KeyBinds.hpp">
+      <Filter>Game\Misc\Other</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Misc\NoFall.hpp">
-      <Filter>Game\Misc</Filter>
+    <ClInclude Include="Game\Misc\Player\NoFall.hpp">
+      <Filter>Game\Misc\Player</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Misc\FastRot.hpp">
-      <Filter>Game\Misc</Filter>
+    <ClInclude Include="Game\Misc\Player\AntiFreeze.hpp">
+      <Filter>Game\Misc\Player</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Misc\FastRun.hpp">
-      <Filter>Game\Misc</Filter>
+    <ClInclude Include="Game\Misc\Player\FastRot.hpp">
+      <Filter>Game\Misc\Player</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Misc\CamHack.hpp">
-      <Filter>Game\Misc</Filter>
+    <ClInclude Include="Game\Misc\Player\FastRun.hpp">
+      <Filter>Game\Misc\Player</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Misc\Flip.hpp">
-      <Filter>Game\Misc</Filter>
+    <ClInclude Include="Game\Misc\Other\CamHack.hpp">
+      <Filter>Game\Misc\Other</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Misc\GameSpeed.hpp">
-      <Filter>Game\Misc</Filter>
+    <ClInclude Include="Game\Misc\Vehicle\Flip.hpp">
+      <Filter>Game\Misc\Vehicle</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Misc\GodMode.hpp">
-      <Filter>Game\Misc</Filter>
+    <ClInclude Include="Game\Misc\Vehicle\FastExit.hpp">
+      <Filter>Game\Misc\Vehicle</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Misc\NoBikeFall.hpp">
-      <Filter>Game\Misc</Filter>
+    <ClInclude Include="Game\Misc\Other\GameSpeed.hpp">
+      <Filter>Game\Misc\Other</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Misc\Repair.hpp">
-      <Filter>Game\Misc</Filter>
+    <ClInclude Include="Game\Misc\Player\GodMode.hpp">
+      <Filter>Game\Misc\Player</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Misc\Skin.hpp">
-      <Filter>Game\Misc</Filter>
+    <ClInclude Include="Game\Misc\Vehicle\NoBikeFall.hpp">
+      <Filter>Game\Misc\Vehicle</Filter>
     </ClInclude>
-    <ClInclude Include="Game\Misc\VehicleFlags.hpp">
-      <Filter>Game\Misc</Filter>
+    <ClInclude Include="Game\Misc\Vehicle\Repair.hpp">
+      <Filter>Game\Misc\Vehicle</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Misc\Player\Skin.hpp">
+      <Filter>Game\Misc\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Misc\Vehicle\Speedhack.hpp">
+      <Filter>Game\Misc\Vehicle</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Misc\Vehicle\VehicleFlags.hpp">
+      <Filter>Game\Misc\Vehicle</Filter>
     </ClInclude>
     <ClInclude Include="Game\Rage\FastCrosshair.hpp">
       <Filter>Game\Rage</Filter>

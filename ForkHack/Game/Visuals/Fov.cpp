@@ -6,10 +6,9 @@ void Fov::Update()
 {
     static bool wasOn = false;
     static float saved = 70.0f;
-    static float savedCam = 70.0f;
+    static float savedCam[3] = { 70.0f, 70.0f, 70.0f };
 
     float* pFov = reinterpret_cast<float*>(0x8D5038);
-    CCam& cam = TheCamera.m_aCams[TheCamera.m_nActiveCam];
     bool aiming = (GetAsyncKeyState(VK_RBUTTON) & 0x8000) != 0;
 
     if (!g_cfg.fov || aiming)
@@ -17,7 +16,12 @@ void Fov::Update()
         if (wasOn)
         {
             *pFov = saved;
-            cam.m_fFOV = savedCam;
+
+            for (int i = 0; i < 3; i++)
+            {
+                TheCamera.m_aCams[i].m_fFOV = savedCam[i];
+            }
+
             wasOn = false;
         }
 
@@ -27,11 +31,20 @@ void Fov::Update()
     if (!wasOn)
     {
         saved = *pFov;
-        savedCam = cam.m_fFOV;
+
+        for (int i = 0; i < 3; i++)
+        {
+            savedCam[i] = TheCamera.m_aCams[i].m_fFOV;
+        }
+
         wasOn = true;
     }
 
     float v = std::clamp(g_cfg.fovval, 30.0f, 120.0f);
     *pFov = v;
-    cam.m_fFOV = v;
+
+    for (int i = 0; i < 3; i++)
+    {
+        TheCamera.m_aCams[i].m_fFOV = v;
+    }
 }

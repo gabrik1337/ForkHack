@@ -212,6 +212,9 @@ bool config_t::Save(const std::string& name)
     WriteBool(body, "nofall", nofall);
     WriteInt(body, "nofall_key", nofall_bind.key);
     WriteInt(body, "nofall_mode", nofall_bind.mode);
+    WriteBool(body, "antifreeze", antifreeze);
+    WriteInt(body, "antifreeze_key", antifreeze_bind.key);
+    WriteInt(body, "antifreeze_mode", antifreeze_bind.mode);
     WriteBool(body, "fastbeg", fastbeg);
     WriteInt(body, "fastbeg_key", fastbeg_bind.key);
     WriteInt(body, "fastbeg_mode", fastbeg_bind.mode);
@@ -223,6 +226,8 @@ bool config_t::Save(const std::string& name)
     WriteBool(body, "speedhack", speedhack);
     WriteInt(body, "speedhack_key", speedhack_bind.key);
     WriteInt(body, "speedhack_mode", speedhack_bind.mode);
+    WriteInt(body, "fastexit_key", fastexit_bind.key);
+    WriteInt(body, "fastexit_mode", fastexit_bind.mode);
     WriteFloat(body, "MaxSpd", MaxSpd);
     WriteBool(body, "airbreake", airbreake);
     WriteInt(body, "airbreake_key", airbreake_bind.key);
@@ -406,6 +411,9 @@ bool config_t::Load(const std::string& name)
         else if (key == "nofall") { ReadBool(value, nofall); }
         else if (key == "nofall_key") { ReadInt(value, nofall_bind.key); }
         else if (key == "nofall_mode") { ReadInt(value, nofall_bind.mode); }
+        else if (key == "antifreeze") { ReadBool(value, antifreeze); }
+        else if (key == "antifreeze_key") { ReadInt(value, antifreeze_bind.key); }
+        else if (key == "antifreeze_mode") { ReadInt(value, antifreeze_bind.mode); }
         else if (key == "fastbeg") { ReadBool(value, fastbeg); }
         else if (key == "fastbeg_key") { ReadInt(value, fastbeg_bind.key); }
         else if (key == "fastbeg_mode") { ReadInt(value, fastbeg_bind.mode); }
@@ -417,6 +425,8 @@ bool config_t::Load(const std::string& name)
         else if (key == "speedhack") { ReadBool(value, speedhack); }
         else if (key == "speedhack_key") { ReadInt(value, speedhack_bind.key); }
         else if (key == "speedhack_mode") { ReadInt(value, speedhack_bind.mode); }
+        else if (key == "fastexit_key") { ReadInt(value, fastexit_bind.key); }
+        else if (key == "fastexit_mode") { ReadInt(value, fastexit_bind.mode); }
         else if (key == "MaxSpd") { ReadFloat(value, MaxSpd); }
         else if (key == "airbreake") { ReadBool(value, airbreake); }
         else if (key == "airbreake_key") { ReadInt(value, airbreake_bind.key); }

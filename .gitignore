@@ -1,0 +1,16 @@
+Release/
+Beta/
+Debug/
+x64/
+Win32/
+.vs/
+*.user
+*.suo
+*.obj
+*.pdb
+*.ipdb
+*.iobj
+*.tlog
+*.log
+*.recipe
+*.lastbuildstate

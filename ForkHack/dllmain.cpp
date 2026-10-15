@@ -1,5 +1,6 @@
 // Developed by gabrik1337 
 // about me: im a georgian legend man :)
+// L
 
 #include <thread>
 #include <windows.h>

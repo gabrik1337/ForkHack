@@ -15,8 +15,7 @@
 #include "Core/Color.hpp"
 #include "Core/Config.hpp"
 
-// todo: make a УКРАIНСКИ ЯЗIК ПО ПРИКОЛУ
-// и желательно ЧЭЧЭНСКИ БОЛЯ 
+// todo: no any todo :( L
 inline const char* tr(const char* ru, const char* en)
 {
     return g_cfg.language == 1 ? en : ru; // 0 = ru, 1 = english

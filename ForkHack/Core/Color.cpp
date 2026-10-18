@@ -1,3 +1,4 @@
+// L
 #include "Core/Color.hpp"
 
 #include <algorithm>
